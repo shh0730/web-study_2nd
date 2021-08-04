@@ -1,0 +1,28 @@
+        
+        .layout {  
+            background-color: blueviolet;
+            width:200px;
+            height:200px;
+            border:10px solid #000;
+            border-radius: 20px;
+            font-family: 'Gothic A1', sans-serif;
+            
+        }
+
+        #layout_id_02 {
+            background-color: brown;
+            width:100px;
+            height:100px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .layout02 > p {
+            font-size: 20px;
+            font-weight: 700;
+            color:#fff;
+        }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <meta name="description" content="내용"/>
+    <meta name="keyword" content="웹사이트, 클래스101"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap" rel="stylesheet">  
+    <link href="2.css" rel="stylesheet">
+
+    <!-- 주요정보의 표현 방식-->
+    <!-- class 호출시 .class명 / id 호출시 #id명
+        margin 외부여백 padding 내부여백
+        ex) body 전체의 p 태그에 css를 입힐때는 p  ==> 전역변수와 비슷
+        해당 클래스 아래의 p태그에 css를 입힐때는 .layout02 > p (지칭을 해줘야함)  ==> 지역변수와 비슷
+        css 파일로 뻈기에 주석처리
+
+    <style>        
+        .layout {  
+            background-color: blueviolet;
+            width:200px;
+            height:200px;
+            border:10px solid #000;
+            border-radius: 20px;
+            font-family: 'Gothic A1', sans-serif;
+            
+        }
+
+        #layout_id_02 {
+            background-color: brown;
+            width:100px;
+            height:100px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .layout02 > p {
+            font-size: 20px;
+            font-weight: 700;
+            color:#fff;
+        }
+    </style>    
+    -->
+</head>
+<body>
+    
+    <div class="layout layout01" id="layout_id_01"> <!--레이아웃을 나누는 div태그 / class 태그는 여러개 가능 / id 태그는 1개만 가능-->
+        <div class="layout02" id="layout_id_02">
+            <p>내부 문단 태그</p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <p>문단 태그</p>
+
+</body>
+</html>
